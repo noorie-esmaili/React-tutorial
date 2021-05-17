@@ -1,11 +1,22 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+// stateless functional component
+// always return JSX
+
 function Greeting() {
-    return <h4> 
-        This is Noorie and this is my first component
-    </h4>
+    return <div>
+        <h1>hello world</h1>
+    </div>
 }
+
+// const Greeting = () => {
+//     return React.createElement('h1', {}, React.createElement(
+//         'div',
+//         {},
+//         React.createElement('h1', {}, 'hello world')
+//         ));
+// };
 
 ReactDom.render(
 <Greeting/>, document.getElementById('root')
